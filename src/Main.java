@@ -56,10 +56,30 @@ public class Main {
 
         //How to take input?
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Input your age : ");
         int age = sc.nextInt();
         System.out.println(age);
 
+        System.out.println("Input your marks : ");
+        float marks = sc.nextFloat();
+        System.out.println(marks);
 
+        System.out.println("Input your name : ");
+        String str = sc.next();
+        System.out.println(str);
+
+        System.out.println("Input your line : ");
+        String line = sc.nextLine();    //to input a line , strings with space
+        System.out.println(line);
+
+        //Exception handling (try catch)
+        int[] ages = {43, 45, 21};
+        try {
+            System.out.println(ages[4]);
+        } catch (Exception ex) {
+            System.out.println("Exception Handling");
+        }
+        System.out.println("Line after try catch block");
     }
 }
